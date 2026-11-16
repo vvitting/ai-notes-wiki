@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  const REPO_URL = "https://github.com/YOUR-NAME/ai-notes-wiki"; // ← 上傳 GitHub 後改成你的 repo 網址
+  const REPO_URL = "https://vvitting.github.io/ai-notes-wiki/"; // ← 上傳 GitHub 後改成你的 repo 網址
 
   const $main = document.getElementById("main");
   const $nav = document.getElementById("nav");
