@@ -1,0 +1,10 @@
+{
+  "title": "AI 工程筆記本",
+  "subtitle": "RAG、AI Agent 與 LLM 應用的個人 Wiki",
+  "author": "Ting",
+  "categories": [
+    { "id": "concept", "name": "概念", "description": "核心觀念與名詞，先懂這些再動手" },
+    { "id": "practice", "name": "實作", "description": "做系統時真的會遇到的設計選擇與坑" },
+    { "id": "course", "name": "課程筆記", "description": "上課內容整理成可以重複查的條目" }
+  ]
+}

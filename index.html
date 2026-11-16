@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 工程筆記本</title>
+  <meta name="description" content="RAG、AI Agent 與 LLM 應用的個人 Wiki">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%232f5d50%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-size=%2218%22 text-anchor=%22middle%22 fill=%22%23f7f4ec%22%3E筆%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">筆</span>
+      <span class="brand-text">
+        <strong id="site-title">AI 工程筆記本</strong>
+        <small id="site-subtitle"></small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar">目錄</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <label class="search">
+        <span class="visually-hidden">搜尋條目</span>
+        <input id="search" type="search" placeholder="搜尋標題、摘要、標籤…" autocomplete="off">
+      </label>
+      <nav id="nav" aria-label="條目分類"></nav>
+      <p class="sidebar-foot">
+        規則：<a href="https://github.com/" id="repo-link" target="_blank" rel="noopener">AGENTS.md</a>
+      </p>
+    </aside>
+
+    <main id="main" class="content" tabindex="-1">
+      <p class="loading">載入中…</p>
+    </main>
+  </div>
+
+  <script src="assets/vendor/marked.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+{
+  "site": {
+    "title": "AI 工程筆記本",
+    "subtitle": "RAG、AI Agent 與 LLM 應用的個人 Wiki",
+    "author": "Ting",
+    "categories": [
+      {
+        "id": "concept",
+        "name": "概念",
+        "description": "核心觀念與名詞，先懂這些再動手"
+      },
+      {
+        "id": "practice",
+        "name": "實作",
+        "description": "做系統時真的會遇到的設計選擇與坑"
+      },
+      {
+        "id": "course",
+        "name": "課程筆記",
+        "description": "上課內容整理成可以重複查的條目"
+      }
+    ]
+  },
+  "count": 5,
+  "tags": [
+    "AGENTS.md",
+    "AI Agent",
+    "Agentic AI",
+    "Chunking",
+    "Harness",
+    "LLM Wiki",
+    "RAG",
+    "RAGAS",
+    "向量資料庫",
+    "檢索",
+    "評估"
+  ],
+  "entries": [
+    {
+      "slug": "rag-evaluation",
+      "title": "怎麼評估一個 RAG 系統",
+      "category": "practice",
+      "tags": [
+        "RAG",
+        "評估",
+        "RAGAS"
+      ],
+      "updated": "2026-11-16",
+      "summary": "把「檢索有沒有撈對」和「回答有沒有忠於資料」拆開評估，才知道該修哪一段。",
+      "sources": [
+        "https://docs.ragas.io/"
+      ],
+      "file": "wiki/rag-evaluation.md",
+      "words": 955,
+      "links": [
+        "chunking-strategies",
+        "rag-basics"
+      ],
+      "backlinks": [
+        "chunking-strategies",
+        "rag-basics"
+      ]
+    },
+    {
+      "slug": "rag-basics",
+      "title": "RAG 是什麼：讓模型開書考試",
+      "category": "concept",
+      "tags": [
+        "RAG",
+        "檢索",
+        "向量資料庫"
+      ],
+      "updated": "2026-11-16",
+      "summary": "先從知識庫找出相關段落，再交給 LLM 根據這些段落回答，降低幻覺並能引用來源。",
+      "sources": [
+        "https://arxiv.org/abs/2005.11401"
+      ],
+      "file": "wiki/rag-basics.md",
+      "words": 938,
+      "links": [
+        "agent-harness",
+        "chunking-strategies",
+        "rag-evaluation"
+      ],
+      "backlinks": [
+        "agent-harness",
+        "agents-md",
+        "chunking-strategies",
+        "rag-evaluation"
+      ]
+    },
+    {
+      "slug": "chunking-strategies",
+      "title": "切段策略（Chunking）怎麼選",
+      "category": "practice",
+      "tags": [
+        "RAG",
+        "Chunking",
+        "檢索"
+      ],
+      "updated": "2026-11-16",
+      "summary": "段落切太大會混入雜訊、切太小會失去上下文；依文件結構選擇切法並保留中繼資料。",
+      "sources": [],
+      "file": "wiki/chunking-strategies.md",
+      "words": 853,
+      "links": [
+        "rag-basics",
+        "rag-evaluation"
+      ],
+      "backlinks": [
+        "rag-basics",
+        "rag-evaluation"
+      ]
+    },
+    {
+      "slug": "agents-md",
+      "title": "AGENTS.md 與 CLAUDE.md：寫給 AI 的員工手冊",
+      "category": "course",
+      "tags": [
+        "AGENTS.md",
+        "Harness",
+        "LLM Wiki"
+      ],
+      "updated": "2026-11-16",
+      "summary": "一份放在專案根目錄、讓 AI 每次上工前先讀的規則文件，解決對話太長與換電腦就失憶的問題。",
+      "sources": [
+        "raw/09-agentic-work.md",
+        "https://bit.ly/llmwiki"
+      ],
+      "file": "wiki/agents-md.md",
+      "words": 823,
+      "links": [
+        "agent-harness",
+        "rag-basics"
+      ],
+      "backlinks": [
+        "agent-harness"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "AI Agent = 模型 + Harness",
+      "category": "course",
+      "tags": [
+        "AI Agent",
+        "Harness",
+        "Agentic AI"
+      ],
+      "updated": "2026-11-16",
+      "summary": "決定 AI Agent 好不好用的，往往不是模型本身，而是包在模型外面的那套工作裝備。",
+      "sources": [
+        "raw/09-agentic-work.md"
+      ],
+      "file": "wiki/agent-harness.md",
+      "words": 1068,
+      "links": [
+        "agents-md",
+        "rag-basics"
+      ],
+      "backlinks": [
+        "agents-md",
+        "rag-basics"
+      ]
+    }
+  ]
+}
